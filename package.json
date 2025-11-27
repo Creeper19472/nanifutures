@@ -1,0 +1,17 @@
+{
+    "name": "com.crp9472.nanifutures",
+    "version": "1.21.251124",
+    "displayName": "Naninovel Futures",
+    "description": "Get a sneak peek at experimental features being developed for Naninovel that are still in the proposal stage.",
+    "unity": "6000.0",
+    "author": { "name": "Creeper19472", "url": "https://github.com/Creeper19472" },
+    "keywords": [
+        "visual novel engine",
+        "VN engine",
+        "experimental",
+        "futures"
+    ],
+    "dependencies": {
+        "com.elringus.naninovel": "1.21.251124"
+    }
+}
