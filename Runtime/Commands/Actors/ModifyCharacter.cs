@@ -1,5 +1,6 @@
 using UnityEngine;
 using Naninovel;
+using Naninovel.Commands;
 
 
 namespace NaniFutures.Commands
@@ -41,7 +42,7 @@ Modifies a [character actor](/guide/characters).",
              "When appearance is not specified, will use either a `Default` (is exists) or a random one. " +
              "When `printer` parameter is specified, multiple character IDs can be provided (comma-separated), but appearance is not allowed.")]
         [Alias(NamelessParameterAlias), RequiredParameter, ActorContext(CharactersConfiguration.DefaultPathPrefix, 0), AppearanceContext(1)]
-        public NamedStringListParameter IdAndAppearance;
+        new public NamedStringListParameter IdAndAppearance;
 
         [Alias("printer"), ActorContext(TextPrintersConfiguration.DefaultPathPrefix)]
         public StringParameter PrinterId;

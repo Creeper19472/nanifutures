@@ -1,11 +1,14 @@
 using Naninovel;
+using Naninovel.Commands;
 
 
 namespace NaniFutures.Commands
 {
     public abstract class PrinterCommandFuture : PrinterCommand
     {
-        protected virtual async UniTask<ITextPrinterActor> GetOrAddPrinter (AsyncToken token = default)
+        // protected override ICharacterManager Characters => Engine.GetServiceOrErr<ICharacterManagerFuture>();
+
+        protected override async UniTask<ITextPrinterActor> GetOrAddPrinter (AsyncToken token = default)
         {
             var printerId = default(string);
 
