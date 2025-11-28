@@ -1,12 +1,16 @@
-namespace Naninovel
+using Naninovel;
+
+
+namespace NaniFutures
 {
     public class GenericLineCompilerFuture : GenericLineCompiler
     {
-        protected virtual void AddAppearanceChange ()
+        protected virtual void AddAppearanceChange()
         {
             if (string.IsNullOrEmpty(AuthorId)) return;
             if (string.IsNullOrEmpty(AuthorAppearance)) return;
-            AddCommand(new ModifyCharacter {
+            AddCommand(new ModifyCharacter
+            {
                 IsGenericPrefix = true,
                 IdAndAppearance = new List<NullableNamedString> { new NamedString(AuthorId, AuthorAppearance) },
                 Wait = false,

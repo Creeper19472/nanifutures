@@ -1,4 +1,7 @@
-namespace Naninovel.Commands
+using Naninovel;
+
+
+namespace NaniFutures.Commands
 {
     public abstract class PrinterCommandFuture : PrinterCommand
     {

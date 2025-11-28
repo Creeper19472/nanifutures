@@ -1,6 +1,8 @@
 using UnityEngine;
+using Naninovel;
 
-namespace Naninovel.Commands
+
+namespace NaniFutures.Commands
 {
     [Doc(@"
 Modifies a [character actor](/guide/characters).",

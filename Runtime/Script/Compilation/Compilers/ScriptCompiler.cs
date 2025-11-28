@@ -1,4 +1,7 @@
-namespace Naninovel
+using Naninovel;
+
+
+namespace NaniFutures
 {
     public class ScriptCompilerFuture : ScriptCompiler
     {
